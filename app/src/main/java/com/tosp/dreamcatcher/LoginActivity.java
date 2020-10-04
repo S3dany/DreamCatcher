@@ -25,4 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void RegisterTextViewClicked(View view){
+        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+        startActivity(intent);
+    }
 }
