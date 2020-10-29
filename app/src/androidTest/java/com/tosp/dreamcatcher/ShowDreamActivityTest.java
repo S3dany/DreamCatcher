@@ -16,18 +16,18 @@ import static org.junit.Assert.*;
 @RunWith(AndroidJUnit4.class)
 public class ShowDreamActivityTest {
     @Rule
-    public ActivityTestRule<LoginActivity> loginActivityTestRule = new ActivityTestRule<LoginActivity>(LoginActivity.class);
-    private LoginActivity mLoginActivity = null;
+    public ActivityTestRule<ShowDreamActivity> showDreamActivityTestRule = new ActivityTestRule<ShowDreamActivity>(ShowDreamActivity.class);
+    private ShowDreamActivity mShowDreamActivity = null;
 
     @Before
     public void setUp() throws Exception {
-        mLoginActivity = loginActivityTestRule.getActivity();
+        mShowDreamActivity = showDreamActivityTestRule.getActivity();
     }
 
     @Test
     public void testLaunch() {
-        View textView = mLoginActivity.findViewById(R.id.textView);
-        View returnButton = mLoginActivity.findViewById(R.id.returnButton);
+        View textView = mShowDreamActivity.findViewById(R.id.textView);
+        View returnButton = mShowDreamActivity.findViewById(R.id.returnButton);
         assertNotNull(textView);
         assertNotNull(returnButton);
     }
