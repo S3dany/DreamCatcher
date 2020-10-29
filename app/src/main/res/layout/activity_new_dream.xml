@@ -7,7 +7,7 @@
     tools:context=".NewDreamActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/save_button"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginBottom="52dp"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/dreamInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -32,5 +32,49 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moodQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="56dp"
+        android:hint="@string/prompt_mood"
+        app:layout_constraintBottom_toTopOf="@+id/neutral_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dreamInput"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <Button
+        android:id="@+id/bad_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="164dp"
+        android:hint="@string/button_bad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/neutral_button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164dp"
+        android:hint="@string/button_neutral"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/good_button"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toEndOf="@+id/bad_button" />
+
+    <Button
+        android:id="@+id/good_button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="164dp"
+        android:hint="@string/button_good"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
