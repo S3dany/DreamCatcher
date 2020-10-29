@@ -7,7 +7,7 @@
     tools:context=".ShowDreamActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/returnButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
@@ -22,7 +22,7 @@
         android:layout_width="306dp"
         android:layout_height="465dp"
         android:text="@string/textview"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/returnButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
