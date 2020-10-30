@@ -7,6 +7,9 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         LoginActivityTest.class,
         RegisterActivityTest.class,
-        NewDreamActivityTest.class
+        NewDreamActivityTest.class,
+        MainActivityTest.class,
+        ShowDreamActivityTest.class,
+        ListAllDreamsActivityTest.class
 })
 public class InstrumentedTestSuite {}
