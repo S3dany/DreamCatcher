@@ -10,6 +10,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <!-- Strings related to  New Dream entry-->
+    <string name="name">Name</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
     <string name="save_dream">Save dream</string>
     <string name="dream_text">Write down your dream</string>
     <string name="button_neutral">NEUTRAL</string>

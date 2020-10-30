@@ -13,6 +13,7 @@
             android:name=".NewDreamActivity">
 
         </activity>
+        <activity android:name=".ShowDreamActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".ListAllDreamsActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
