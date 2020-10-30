@@ -13,17 +13,18 @@
             android:name=".NewDreamActivity">
 
         </activity>
+        <activity android:name=".ShowDreamActivity"></activity>
         <activity android:name=".MainActivity" />
+        <activity android:name=".ListAllDreamsActivity"></activity>
         <activity android:name=".RegisterActivity"></activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
     </application>
 

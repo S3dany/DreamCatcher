@@ -4,6 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/new_dream_buttton"
+        android:layout_width="205dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="344dp"
+        android:background="#FDC500"
+        android:fontFamily="casual"
+        android:text="Register a new Dream"
+        android:textAlignment="center"
+        android:textColor="#1565C0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/view_dreams_button"
+        android:layout_width="171dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="104dp"
+        android:background="#FFD500"
+        android:fontFamily="casual"
+        android:text="View Previous Dreams"
+        android:textAlignment="center"
+        android:textColor="#1565C0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Welcome_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="180dp"
+        android:text="Welcome \n to Dream Catcher"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F9A825"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/new_dream_buttton"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
