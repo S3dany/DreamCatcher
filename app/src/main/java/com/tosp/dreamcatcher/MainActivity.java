@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        newDreamButton  = (Button) findViewById(R.id.new_dream_buttton);
+        newDreamButton  = (Button) findViewById(R.id.new_dream_button);
         viewDreamsButton = (Button) findViewById(R.id.view_dreams_button);
 
         newDreamButton.setOnClickListener(new View.OnClickListener() {

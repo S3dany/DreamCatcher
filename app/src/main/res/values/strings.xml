@@ -19,4 +19,8 @@
     <string name="button_good">GOOD</string>
     <string name="button_bad">BAD</string>
     <string name="prompt_mood">How was your dream?</string>
+    <!-- Strings related to  Main Page -->
+    <string name="welcome_text">Welcome \n to Dream Catcher</string>
+    <string name="new_dream_prompt">Add a new Dream</string>
+    <string name="view_dreams_prompt">View Previous Dreams</string>
 </resources>
