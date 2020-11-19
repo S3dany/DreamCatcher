@@ -14,6 +14,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegisterActivity extends AppCompatActivity {
     EditText username, email, password, confirmPassword;
@@ -30,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
         confirmPassword =  findViewById(R.id.confirmPWeditText);
         mAuth = FirebaseAuth.getInstance();
 
+
         //User signed in
         if (mAuth.getCurrentUser() != null) {
             Intent intent = new Intent(this, MainActivity.class);
@@ -43,6 +49,18 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
+                    String user_id = mAuth.getCurrentUser().getUid();
+                    DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
+
+                    String new_email = email.getText().toString();
+                    String new_username = username.getText().toString();
+
+                    Map newUser = new HashMap();
+                    newUser.put("email", new_email);
+                    newUser.put("username", new_username);
+
+                    current_user_db.setValue(newUser);
+
                     Toast.makeText(RegisterActivity.this, "Sign up successful", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
