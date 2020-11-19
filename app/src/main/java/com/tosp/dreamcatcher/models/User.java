@@ -1,4 +1,4 @@
-package com.tosp.dreamcatcher;
+package com.tosp.dreamcatcher.models;
 
 import java.util.ArrayList;
 
