@@ -3,9 +3,6 @@ package com.tosp.dreamcatcher;
 
 
 
-import com.tosp.dreamcatcher.models.FriendRequest;
-import com.tosp.dreamcatcher.models.User;
-
 import org.junit.Before;
 import org.junit.Test;
 
