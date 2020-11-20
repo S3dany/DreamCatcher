@@ -1,11 +1,10 @@
 package com.tosp.dreamcatcher;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -17,6 +16,7 @@ import java.util.Map;
 public class NewDreamActivity extends AppCompatActivity {
     EditText dream_title, dream_content;
     FirebaseAuth mAuth;
+    DreamEntry newDream = new DreamEntry();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +32,13 @@ public class NewDreamActivity extends AppCompatActivity {
         String user_id = mAuth.getCurrentUser().getUid();
         DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Dreams").child(user_id);
 
-        String new_dream_title = dream_title.getText().toString();
-        String new_dream_content= dream_content.getText().toString();
+        newDream.setTitle(dream_title.getText().toString());
+        newDream.setText(dream_content.getText().toString());
+
 
         Map newUser = new HashMap();
-        newUser.put("dream title", new_dream_title);
-        newUser.put("dream content", new_dream_content);
+        newUser.put("dream title", newDream.getTitle());
+        newUser.put("dream content", newDream.getText());
 
         current_user_db.setValue(newUser);
     }
