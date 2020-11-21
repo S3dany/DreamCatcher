@@ -27,11 +27,11 @@ public class MainActivityTest {
 
     @Test
     public void testLaunch() {
-        View new_dream_buttton = mMainActivity.findViewById(R.id.new_dream_buttton);
+        View new_dream_button = mMainActivity.findViewById(R.id.new_dream_button);
         View view_dreams_button = mMainActivity.findViewById(R.id.view_dreams_button);
         View Welcome_Message = mMainActivity.findViewById(R.id.Welcome_Message);
 
-        assertNotNull(new_dream_buttton);
+        assertNotNull(new_dream_button);
         assertNotNull(view_dreams_button);
         assertNotNull(Welcome_Message);
     }
